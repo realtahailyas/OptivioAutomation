@@ -49,6 +49,16 @@ body::before {
   background: rgba(0, 200, 255, 0.5);
 }
 
+/* Blog page CSS fade-in — no JS dependency, starts visible */
+@keyframes blogFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.blog-page-fade {
+  animation: blogFadeIn 0.45s ease-out both;
+}
+
 /* Blog article content styles */
 .blog-content h2 {
   font-family: var(--font-sora), sans-serif;
