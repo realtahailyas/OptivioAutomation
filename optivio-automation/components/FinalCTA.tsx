@@ -19,7 +19,7 @@ export default function FinalCTA() {
             Book a 15-minute demo. See your AI receptionist in action. No commitment.
           </p>
           <a
-            href="https://calendly.com"
+            href="https://calendly.com/optivioautomation/15min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-[#00C8FF] to-[#00A3FF] text-[#0A1628] font-sora font-bold text-lg px-10 py-5 rounded-xl transition-all duration-300 shadow-[0_0_25px_rgba(0,200,255,0.3)] hover:shadow-[0_0_40px_rgba(0,200,255,0.5)] hover:scale-105 mb-8"

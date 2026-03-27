@@ -94,7 +94,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <a
-              href="https://calendly.com"
+              href="https://calendly.com/optivioautomation/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#00C8FF] to-[#00A3FF] text-[#0A1628] font-sora font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-300 shadow-[0_0_25px_rgba(0,200,255,0.3)] hover:shadow-[0_0_40px_rgba(0,200,255,0.5)] hover:scale-105 inline-block"
@@ -130,7 +130,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="https://calendly.com"
+              href="https://calendly.com/optivioautomation/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#00C8FF] to-[#00A3FF] text-[#0A1628] font-sora font-semibold text-sm px-5 py-3 rounded-lg text-center mt-2 transition-all duration-300 shadow-[0_0_25px_rgba(0,200,255,0.3)]"
