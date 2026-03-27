@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-const navLinks = [
+const homeSections = [
   { label: 'How It Works', id: 'how-it-works' },
   { label: 'Pricing', id: 'pricing' },
   { label: 'FAQ', id: 'faq' },
@@ -14,6 +16,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState<string>('')
+  const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
@@ -22,8 +26,9 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
+    if (!isHome) return
     const observers: IntersectionObserver[] = []
-    navLinks.forEach(({ id }) => {
+    homeSections.forEach(({ id }) => {
       const el = document.getElementById(id)
       if (!el) return
       const observer = new IntersectionObserver(
@@ -36,7 +41,7 @@ export default function Navbar() {
       observers.push(observer)
     })
     return () => observers.forEach((o) => o.disconnect())
-  }, [])
+  }, [isHome])
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id)
@@ -55,7 +60,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div>
+          <Link href="/">
             <Image
               src="/logo.png"
               alt="Optivio Automation"
@@ -72,23 +77,58 @@ export default function Navbar() {
               className="sm:hidden object-contain h-8 w-auto"
               priority
             />
-          </div>
+          </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map(({ label, id }) => (
-              <button
-                key={id}
-                onClick={() => scrollTo(id)}
-                className={`text-sm font-dm transition-all duration-200 pb-1 ${
-                  activeSection === id
-                    ? 'text-[#00C8FF] border-b-2 border-[#00C8FF]'
-                    : 'text-[#94A3B8] hover:text-white border-b-2 border-transparent'
-                }`}
-              >
-                {label}
-              </button>
-            ))}
+            {isHome ? (
+              <>
+                {homeSections.map(({ label, id }) => (
+                  <button
+                    key={id}
+                    onClick={() => scrollTo(id)}
+                    className={`text-sm font-dm transition-all duration-200 pb-1 ${
+                      activeSection === id
+                        ? 'text-[#00C8FF] border-b-2 border-[#00C8FF]'
+                        : 'text-[#94A3B8] hover:text-white border-b-2 border-transparent'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+                <Link
+                  href="/blog"
+                  className="text-sm font-dm text-[#94A3B8] hover:text-white transition-all duration-200 pb-1 border-b-2 border-transparent"
+                >
+                  Blog
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/"
+                  className="text-sm font-dm text-[#94A3B8] hover:text-white transition-all duration-200 pb-1 border-b-2 border-transparent"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/blog"
+                  className={`text-sm font-dm transition-all duration-200 pb-1 ${
+                    pathname.startsWith('/blog')
+                      ? 'text-[#00C8FF] border-b-2 border-[#00C8FF]'
+                      : 'text-[#94A3B8] hover:text-white border-b-2 border-transparent'
+                  }`}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/#pricing"
+                  className="text-sm font-dm text-[#94A3B8] hover:text-white transition-all duration-200 pb-1 border-b-2 border-transparent"
+                >
+                  Pricing
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Desktop CTA */}
@@ -118,17 +158,58 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#0F1F35] border-t border-[rgba(0,200,255,0.1)]">
           <div className="px-4 py-6 flex flex-col gap-4">
-            {navLinks.map(({ label, id }) => (
-              <button
-                key={id}
-                onClick={() => scrollTo(id)}
-                className={`text-base font-dm text-left py-2 transition-colors ${
-                  activeSection === id ? 'text-[#00C8FF]' : 'text-[#94A3B8] hover:text-white'
-                }`}
-              >
-                {label}
-              </button>
-            ))}
+            {isHome ? (
+              <>
+                {homeSections.map(({ label, id }) => (
+                  <button
+                    key={id}
+                    onClick={() => scrollTo(id)}
+                    className={`text-base font-dm text-left py-2 transition-colors ${
+                      activeSection === id
+                        ? 'text-[#00C8FF]'
+                        : 'text-[#94A3B8] hover:text-white'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+                <Link
+                  href="/blog"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-base font-dm text-left py-2 text-[#94A3B8] hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-base font-dm text-left py-2 text-[#94A3B8] hover:text-white transition-colors"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/blog"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-base font-dm text-left py-2 transition-colors ${
+                    pathname.startsWith('/blog')
+                      ? 'text-[#00C8FF]'
+                      : 'text-[#94A3B8] hover:text-white'
+                  }`}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/#pricing"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-base font-dm text-left py-2 text-[#94A3B8] hover:text-white transition-colors"
+                >
+                  Pricing
+                </Link>
+              </>
+            )}
             <a
               href="https://calendly.com/optivioautomation/15min"
               target="_blank"
