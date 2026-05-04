@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Instagram, Facebook, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -20,19 +21,50 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
-            >
-              Terms of Service
-            </a>
+          <div className="flex flex-col items-center sm:items-end gap-4">
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/optivioautomation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="https://www.facebook.com/optivioautomation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/optivoautomation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+            </div>
+            <div className="flex items-center gap-6">
+              <a
+                href="#"
+                className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+              >
+                Terms of Service
+              </a>
+            </div>
           </div>
         </div>
 

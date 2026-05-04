@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Problem from '@/components/Problem'
 import Solution from '@/components/Solution'
+import DemoVideo from '@/components/DemoVideo'
 import HowItWorks from '@/components/HowItWorks'
 import SocialProof from '@/components/SocialProof'
 import Pricing from '@/components/Pricing'
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
+      <DemoVideo />
       <HowItWorks />
       <SocialProof />
       <Pricing />

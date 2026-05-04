@@ -3,7 +3,13 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(node -e \"console.log\\(require\\(''./node_modules/next/package.json''\\).version\\)\")",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(curl -sI --max-redirs 0 https://optivioautomation.com/blog)",
+      "Bash(curl -sI --max-redirs 0 https://optivioautomation.com/blog/ai-receptionist-vs-human-receptionist-real-cost-comparison)",
+      "Bash(curl -sI --max-redirs 0 https://www.optivioautomation.com/blog)",
+      "Bash(curl -sI --max-redirs 0 https://optivioautomation.com/blog/how-much-do-missed-calls-cost-your-dental-practice)",
+      "Bash(curl -sI --max-redirs 0 https://www.optivioautomation.com/blog/ai-receptionist-vs-human-receptionist-real-cost-comparison)",
+      "Bash(curl -sI --max-redirs 0 https://www.optivioautomation.com/blog/how-much-do-missed-calls-cost-your-dental-practice)"
     ]
   }
 }

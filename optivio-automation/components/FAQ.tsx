@@ -5,28 +5,28 @@ import AnimatedSection from './AnimatedSection'
 
 const faqs = [
   {
-    q: 'Does the AI actually sound human?',
-    a: "Yes. Our AI uses the latest voice synthesis technology with sub-second response times. Callers typically can't tell the difference. We'll demo it for you on our call.",
+    q: "Will my patients know they're talking to an AI?",
+    a: "We're transparent — the AI introduces itself as a virtual assistant. But the conversation feels completely natural. Most patients don't comment on it; they just get their appointment booked.",
   },
   {
-    q: "What if the AI can't handle a question?",
-    a: "The AI is trained to recognize when it's out of its depth. It seamlessly transfers the call to your team with full context of what was discussed — no awkward handoffs.",
+    q: "What if the AI can't handle a call?",
+    a: "Complex cases are routed to your team's mobile or a designated voicemail. The AI never pretends to know something it doesn't.",
   },
   {
-    q: 'How long does setup take?',
-    a: 'Most businesses are fully live within 3-5 business days. We handle everything — training the AI, configuring call flows, connecting to your calendar, and testing.',
+    q: 'Is this GDPR compliant?',
+    a: 'Yes. We use UK/EU-based servers, encrypted call recordings, and compliant data retention policies. Full DPA agreement provided.',
   },
   {
-    q: 'Do I need to change my phone number?',
-    a: "No. We either set up a new dedicated number or forward your existing line to the AI. Your customers won't notice any change except better service.",
+    q: 'Can it integrate with our practice management software?',
+    a: 'Yes — we support Dentally, NHS systems, Cliniko, SOE, and most major PMS platforms. Custom integrations available on Pro and Scale tiers.',
   },
   {
-    q: 'What happens after hours?',
-    a: "That's the whole point. Your AI works 24/7/365 — nights, weekends, holidays. Every call answered, every lead captured, every appointment booked.",
+    q: 'What languages does it speak?',
+    a: 'British English by default. Other languages available on request.',
   },
   {
-    q: 'Can I try it before committing?',
-    a: "Absolutely. Book a free demo and we'll show you a live AI agent built for your specific business niche. You'll hear exactly what your customers will experience.",
+    q: 'What if I want to cancel?',
+    a: 'No long contracts. 30 days notice. We export all your call data and transcripts before disconnecting.',
   },
 ]
 

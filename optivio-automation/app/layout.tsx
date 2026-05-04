@@ -17,11 +17,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://optivioautomation.com'),
   title: {
-    default: 'Optivio Automation | AI Voice Agents That Never Miss a Call',
+    default: 'AI Receptionist for UK Dental Practices | Optivio Automation',
     template: '%s | Optivio Automation',
   },
   description:
-    'AI receptionists for service businesses. Answer every call 24/7, qualify leads, and book appointments automatically. Dental clinics, HVAC, med spas. Starting at $500/mo.',
+    'Stop losing patients to missed calls. AI receptionists for UK dental clinics. 24/7 booking, recall campaigns, GDPR compliant. From £299/mo.',
   keywords: [
     'AI voice agent',
     'AI receptionist',
@@ -54,7 +54,8 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Optivio Automation - AI Voice Agents',
+        alt: 'Optivio Automation — AI voice agents for service businesses',
+        type: 'image/png',
       },
     ],
   },
@@ -63,7 +64,12 @@ export const metadata: Metadata = {
     title: 'AI Voice Agents That Never Miss a Call | Optivio Automation',
     description:
       'Stop losing customers to voicemail. AI receptionists that answer 24/7, qualify leads, and book appointments.',
-    images: ['/og-image.png'],
+    images: {
+      url: '/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'Optivio Automation — AI voice agents for service businesses',
+    },
   },
   robots: {
     index: true,
@@ -96,9 +102,19 @@ const jsonLd = {
       },
       founder: {
         '@type': 'Person',
+        '@id': 'https://tahailyas.com/#person',
         name: 'Taha Ilyas',
         url: 'https://tahailyas.com',
-        sameAs: ['https://linkedin.com/in/tahailyas'],
+        sameAs: [
+          'https://www.instagram.com/tahailyasofficial',
+          'https://www.linkedin.com/in/tahailyas/',
+          'https://www.facebook.com/tahailyas',
+        ],
+        jobTitle: 'Founder & CEO',
+        worksFor: [
+          { '@id': 'https://optivioautomation.com/#organization' },
+          { '@id': 'https://optivioautomation.com/#optivio-media' },
+        ],
       },
       contactPoint: {
         '@type': 'ContactPoint',
@@ -106,9 +122,34 @@ const jsonLd = {
         contactType: 'sales',
         availableLanguage: 'English',
       },
-      sameAs: [],
+      sameAs: [
+        'https://www.instagram.com/optivioautomation',
+        'https://www.facebook.com/optivioautomation',
+        'https://www.linkedin.com/company/optivoautomation',
+      ],
       description:
-        'AI voice agent agency providing 24/7 AI receptionists for service businesses including dental clinics, HVAC companies, and med spas.',
+        'UK agency providing 24/7 AI receptionists for dental practices and other service businesses.',
+      areaServed: [{ '@type': 'Country', name: 'United Kingdom' }],
+    },
+    {
+      '@type': 'Organization',
+      '@id': 'https://optivioautomation.com/#optivio-media',
+      name: 'Optivio Media',
+      url: 'https://optiviomedia.online',
+      description: 'Meta Ads agency specializing in scaling e-commerce brands.',
+      sameAs: [
+        'https://www.instagram.com/optiviomedia',
+      ],
+      founder: { '@id': 'https://tahailyas.com/#person' },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://optivioautomation.com/#chatbot-tool',
+      name: 'Optivio Chatbot',
+      url: 'https://chatbot.tahailyas.com',
+      applicationCategory: 'BusinessApplication',
+      description: 'AI chatbot tool for businesses.',
+      creator: { '@id': 'https://tahailyas.com/#person' },
     },
     {
       '@type': 'WebSite',
@@ -121,44 +162,88 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': 'https://optivioautomation.com/#webpage',
       url: 'https://optivioautomation.com',
-      name: 'AI Voice Agents That Never Miss a Call | Optivio Automation',
+      name: 'AI Receptionist for UK Dental Practices | Optivio Automation',
       isPartOf: { '@id': 'https://optivioautomation.com/#website' },
       about: { '@id': 'https://optivioautomation.com/#organization' },
       description:
-        'AI receptionists for service businesses. Answer every call 24/7, qualify leads, and book appointments automatically.',
+        'AI receptionists for UK dental clinics. 24/7 booking, recall campaigns, GDPR compliant. From £299/mo.',
     },
     {
       '@type': 'Service',
       '@id': 'https://optivioautomation.com/#service',
-      name: 'AI Voice Agent Service',
+      name: 'AI Receptionist for UK Dental Practices',
       provider: { '@id': 'https://optivioautomation.com/#organization' },
-      serviceType: 'AI Voice Agent / AI Receptionist',
-      areaServed: [
-        { '@type': 'Country', name: 'United States' },
-        { '@type': 'Country', name: 'United Kingdom' },
-        { '@type': 'Country', name: 'Australia' },
-        { '@type': 'Country', name: 'Canada' },
-      ],
+      serviceType: 'AI Receptionist for UK Dental Practices',
+      category: 'Dental, Healthcare, UK Service Businesses',
+      areaServed: [{ '@type': 'Country', name: 'United Kingdom' }],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'AI Voice Agent Packages',
+        name: 'AI Receptionist Plans',
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'AI Voice Agent Starter',
-            price: '500',
-            priceCurrency: 'USD',
+            name: 'Starter',
+            description:
+              'Single-location practices, after-hours coverage. Up to 500 minutes/month.',
+            price: '299',
+            priceCurrency: 'GBP',
             priceSpecification: {
               '@type': 'UnitPriceSpecification',
-              price: '500',
-              priceCurrency: 'USD',
+              price: '299',
+              priceCurrency: 'GBP',
               billingDuration: 'P1M',
+            },
+            addOn: {
+              '@type': 'Offer',
+              name: 'One-time setup fee',
+              price: '499',
+              priceCurrency: 'GBP',
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Pro',
+            description:
+              'Growing practices wanting full automation. Up to 1,200 minutes/month, insurance verification, recall campaigns, emergency triage.',
+            price: '499',
+            priceCurrency: 'GBP',
+            priceSpecification: {
+              '@type': 'UnitPriceSpecification',
+              price: '499',
+              priceCurrency: 'GBP',
+              billingDuration: 'P1M',
+            },
+            addOn: {
+              '@type': 'Offer',
+              name: 'One-time setup fee',
+              price: '799',
+              priceCurrency: 'GBP',
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Scale',
+            description:
+              'Multi-location practices and group dental. Unlimited minutes, multi-location routing, custom integrations, dedicated account manager.',
+            price: '899',
+            priceCurrency: 'GBP',
+            priceSpecification: {
+              '@type': 'UnitPriceSpecification',
+              price: '899',
+              priceCurrency: 'GBP',
+              billingDuration: 'P1M',
+            },
+            addOn: {
+              '@type': 'Offer',
+              name: 'One-time setup fee',
+              price: '1499',
+              priceCurrency: 'GBP',
             },
           },
         ],
       },
       description:
-        '24/7 AI receptionist that answers calls, qualifies leads, books appointments, and handles FAQs for service businesses.',
+        '24/7 AI receptionist for UK dental practices. Answers every call, books appointments, runs recall campaigns, handles emergency triage, and integrates with Dentally, Cliniko, SOE, and other PMS platforms.',
     },
     {
       '@type': 'FAQPage',
@@ -166,50 +251,50 @@ const jsonLd = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Does the AI actually sound human?',
+          name: "Will my patients know they're talking to an AI?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. Our AI uses the latest voice synthesis technology with sub-second response times. Callers typically cannot tell the difference. We demo it live on our call.',
+            text: "We're transparent — the AI introduces itself as a virtual assistant. But the conversation feels completely natural. Most patients don't comment on it; they just get their appointment booked.",
           },
         },
         {
           '@type': 'Question',
-          name: 'What if the AI cannot handle a question?',
+          name: "What if the AI can't handle a call?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The AI recognizes when it is out of its depth and seamlessly transfers the call to your team with full context of what was discussed.',
+            text: "Complex cases are routed to your team's mobile or a designated voicemail. The AI never pretends to know something it doesn't.",
           },
         },
         {
           '@type': 'Question',
-          name: 'How long does setup take?',
+          name: 'Is this GDPR compliant?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most businesses are fully live within 3-5 business days. We handle everything including training the AI, configuring call flows, connecting to your calendar, and testing.',
+            text: 'Yes. We use UK/EU-based servers, encrypted call recordings, and compliant data retention policies. Full DPA agreement provided.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do I need to change my phone number?',
+          name: 'Can it integrate with our practice management software?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. We either set up a new dedicated number or forward your existing line to the AI. Your customers will not notice any change except better service.',
+            text: 'Yes — we support Dentally, NHS systems, Cliniko, SOE, and most major PMS platforms. Custom integrations available on Pro and Scale tiers.',
           },
         },
         {
           '@type': 'Question',
-          name: 'What happens after hours?',
+          name: 'What languages does it speak?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Your AI works 24/7/365 including nights, weekends, and holidays. Every call answered, every lead captured, every appointment booked.',
+            text: 'British English by default. Other languages available on request.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can I try it before committing?',
+          name: 'What if I want to cancel?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Absolutely. Book a free demo and we will show you a live AI agent built for your specific business niche. You will hear exactly what your customers will experience.',
+            text: 'No long contracts. 30 days notice. We export all your call data and transcripts before disconnecting.',
           },
         },
       ],
