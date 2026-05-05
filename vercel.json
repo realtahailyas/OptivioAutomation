@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd optivio-automation && npm run build",
+  "devCommand": "cd optivio-automation && npm run dev",
+  "installCommand": "npm install --prefix optivio-automation",
+  "outputDirectory": "optivio-automation/.next"
+}
