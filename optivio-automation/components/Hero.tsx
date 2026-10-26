@@ -81,19 +81,27 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center gap-4"
         >
-          <a
-            href="https://calendly.com/optivioautomation/15min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-[#00C8FF] to-[#00A3FF] text-[#0A1628] font-sora font-semibold text-base md:text-lg px-8 py-4 rounded-lg transition-all duration-300 shadow-[0_0_25px_rgba(0,200,255,0.3)] hover:shadow-[0_0_40px_rgba(0,200,255,0.5)] hover:scale-105"
-          >
-            Hear The AI Answer Calls Live →
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+            <a
+              href="https://calendly.com/optivioautomation/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-gradient-to-r from-[#00C8FF] to-[#00A3FF] text-[#0A1628] font-sora font-semibold text-base md:text-lg px-8 py-4 rounded-lg text-center transition-all duration-300 shadow-[0_0_25px_rgba(0,200,255,0.3)] hover:shadow-[0_0_40px_rgba(0,200,255,0.5)] hover:scale-105"
+            >
+              Hear The AI Answer Calls Live →
+            </a>
+            <button
+              onClick={() => scrollTo('demo')}
+              className="w-full sm:w-auto bg-transparent text-white font-sora font-semibold text-sm md:text-base px-6 py-3.5 rounded-lg border border-[rgba(91,184,212,0.4)] hover:border-[#5BB8D4] hover:bg-[rgba(91,184,212,0.08)] transition-all duration-300"
+            >
+              Watch Demo Video
+            </button>
+          </div>
           <button
             onClick={() => scrollTo('pricing')}
-            className="text-[#94A3B8] hover:text-white font-dm text-base transition-colors flex items-center gap-2 group"
+            className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors flex items-center gap-2 group"
           >
             View Pricing
             <span className="group-hover:translate-y-1 transition-transform inline-block">↓</span>

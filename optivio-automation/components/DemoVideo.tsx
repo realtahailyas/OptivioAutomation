@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection'
 
 export default function DemoVideo() {
   return (
-    <section className="py-24 px-4 sm:px-6 bg-[#0F1F35]/30">
+    <section id="demo" className="py-24 px-4 sm:px-6 bg-[#0F1F35]/30">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-12">

@@ -7,11 +7,11 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Learn how AI voice agents are transforming service businesses. Tips, guides, and insights on AI receptionists, missed calls, and business automation.',
+    'Learn how AI voice agents are transforming UK service businesses. Tips, guides, and insights on AI receptionists, missed calls, and business automation — built for UK dental practices and beyond.',
   openGraph: {
     title: 'Blog | Optivio Automation',
     description:
-      'Learn how AI voice agents are transforming service businesses. Tips, guides, and insights on AI receptionists, missed calls, and business automation.',
+      'Learn how AI voice agents are transforming UK service businesses. Tips, guides, and insights on AI receptionists, missed calls, and business automation — built for UK dental practices and beyond.',
   },
 }
 

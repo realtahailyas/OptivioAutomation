@@ -12,17 +12,19 @@ const industries = [
 ]
 
 const traditional = [
-  { label: '$3,500/mo', strike: true },
+  { label: '£2,200/mo', strike: true },
   { label: '8hrs/day only', strike: false },
   { label: '1 call at a time', strike: false },
   { label: 'Sick days & vacations', strike: false },
+  { label: '£25,000+ yearly cost', strike: false },
 ]
 
 const ai = [
-  'Starting at $500/mo',
+  'Starting at £299/mo',
   '24/7/365',
   'Unlimited concurrent calls',
   'Never calls in sick',
+  'Setup in 5 days',
 ]
 
 export default function SocialProof() {

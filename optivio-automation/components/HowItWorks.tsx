@@ -28,7 +28,7 @@ export default function HowItWorks() {
               How It Works
             </span>
             <h2 className="font-sora font-bold text-4xl sm:text-5xl text-white">
-              Live in 3 Days. Not 3 Months.
+              Live in 5 days. Not 5 months.
             </h2>
           </div>
         </AnimatedSection>

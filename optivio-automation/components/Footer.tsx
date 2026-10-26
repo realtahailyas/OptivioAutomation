@@ -1,13 +1,15 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[rgba(0,200,255,0.1)] py-10 px-4 sm:px-6">
+    <footer className="border-t border-[rgba(0,200,255,0.1)] py-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col items-center sm:items-start">
-            <div className="mb-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-10">
+          {/* Brand */}
+          <div className="flex flex-col items-center md:items-start">
+            <div className="mb-3">
               <Image
                 src="/logo.png"
                 alt="Optivio Automation"
@@ -16,13 +18,10 @@ export default function Footer() {
                 className="object-contain h-9 w-auto"
               />
             </div>
-            <p className="text-[#94A3B8] font-dm text-sm">
-              © 2026 Optivio Automation. All rights reserved.
+            <p className="text-[#94A3B8] font-dm text-sm max-w-xs text-center md:text-left">
+              AI receptionists for UK dental practices. 24/7 call answering, booking, and recall.
             </p>
-          </div>
-
-          <div className="flex flex-col items-center sm:items-end gap-4">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mt-5">
               <a
                 href="https://www.instagram.com/optivioautomation"
                 target="_blank"
@@ -51,24 +50,87 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
             </div>
-            <div className="flex items-center gap-6">
-              <a
-                href="#"
-                className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
+          </div>
+
+          {/* Product */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">
+              Product
+            </p>
+            <ul className="flex flex-col items-center md:items-start gap-3">
+              <li>
+                <Link
+                  href="/#how-it-works"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  How It Works
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#pricing"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#faq"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">
+              Legal
+            </p>
+            <ul className="flex flex-col items-center md:items-start gap-3">
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gdpr"
+                  className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                >
+                  GDPR / Data Processing Agreement
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="text-center mt-8 pt-6 border-t border-[rgba(0,200,255,0.05)]">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-[rgba(0,200,255,0.05)]">
+          <p className="text-[#94A3B8] font-dm text-sm">
+            © 2026 Optivio Automation. All rights reserved.
+          </p>
           <p className="text-[#94A3B8] font-dm text-xs">Built with AI. Run by humans.</p>
         </div>
       </div>
