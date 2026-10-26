@@ -6,6 +6,18 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  redirects: async () => [
+    {
+      source: '/powerrush',
+      destination: 'https://play.google.com/store/apps/details?id=com.brickrush',
+      permanent: false,
+    },
+    {
+      source: '/dareclock',
+      destination: 'https://play.google.com/store/apps/details?id=com.dareclock',
+      permanent: false,
+    },
+  ],
   headers: async () => [
     {
       source: '/(.*)',
