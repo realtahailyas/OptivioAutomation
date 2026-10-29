@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     'AI receptionist',
     'AI phone answering',
     'dental clinic AI receptionist',
-    'HVAC AI answering service',
-    'med spa AI receptionist',
+    'UK dental AI receptionist',
+    'dental practice call answering',
     'missed calls solution',
     '24/7 call answering',
     'AI appointment booking',
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://optivioautomation.com',
     siteName: 'Optivio Automation',
-    title: 'AI Voice Agents That Never Miss a Call | Optivio Automation',
+    title: 'AI Receptionist for UK Dental Practices | Optivio Automation',
     description:
-      'Stop losing customers to voicemail. AI receptionists that answer 24/7, qualify leads, and book appointments. Built for dental clinics, HVAC, med spas. Starting at $500/mo.',
+      'Stop losing patients to missed calls. AI receptionists for UK dental clinics. 24/7 booking, recall campaigns, GDPR compliant. From £299/mo.',
     images: [
       {
         url: '/og-image.png',
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Voice Agents That Never Miss a Call | Optivio Automation',
+    title: 'AI Receptionist for UK Dental Practices | Optivio Automation',
     description:
-      'Stop losing customers to voicemail. AI receptionists that answer 24/7, qualify leads, and book appointments.',
+      'Stop losing patients to missed calls. AI receptionists for UK dental clinics. 24/7 booking, recall campaigns, GDPR compliant. From £299/mo.',
     images: {
       url: '/og-image.png',
       width: 1200,
