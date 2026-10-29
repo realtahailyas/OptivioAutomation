@@ -2,11 +2,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 
+const apps = [
+  { name: 'TChess', href: 'https://tchess.app' },
+  { name: 'DareClock', href: 'https://play.google.com/store/apps/details?id=com.dareclock' },
+  { name: 'CertForge', href: 'https://getcertforge.app' },
+  {
+    name: 'Brick Breaker: Power Rush',
+    href: 'https://play.google.com/store/apps/details?id=com.brickrush',
+  },
+  {
+    name: 'All apps on Google Play',
+    href: 'https://play.google.com/store/apps/developer?id=Optivio+Automation',
+  },
+]
+
 export default function Footer() {
   return (
     <footer className="border-t border-[rgba(0,200,255,0.1)] py-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-10">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
             <div className="mb-3">
@@ -93,6 +107,27 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Apps */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">
+              Our Apps
+            </p>
+            <ul className="flex flex-col items-center md:items-start gap-3">
+              {apps.map((app) => (
+                <li key={app.name}>
+                  <a
+                    href={app.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#94A3B8] hover:text-white font-dm text-sm transition-colors"
+                  >
+                    {app.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Legal */}
           <div className="flex flex-col items-center md:items-start">
             <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">
@@ -128,8 +163,15 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-[rgba(0,200,255,0.05)]">
-          <p className="text-[#94A3B8] font-dm text-sm">
-            © 2026 Optivio Automation. All rights reserved.
+          <p className="text-[#94A3B8] font-dm text-sm text-center sm:text-left">
+            © 2026 Optivio Automation. All rights reserved. Founded by{' '}
+            <a
+              href="https://tahailyas.com"
+              className="text-[#94A3B8] hover:text-white underline underline-offset-2 transition-colors"
+            >
+              Taha Ilyas
+            </a>
+            .
           </p>
           <p className="text-[#94A3B8] font-dm text-xs">Built with AI. Run by humans.</p>
         </div>

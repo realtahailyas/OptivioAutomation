@@ -44,6 +44,8 @@ export default function BrickBreakerDataDeletionPage() {
           <Link className="text-cyan-300 underline" href={`${gamePath}/privacy`}>Game privacy policy</Link>
           <span className="mx-3">·</span>
           <Link className="text-cyan-300 underline" href="/">Optivio Automation</Link>
+          <span className="mx-3">·</span>
+          <a className="text-cyan-300 underline" href="https://play.google.com/store/apps/details?id=com.brickrush">Get it on Google Play</a>
         </footer>
       </article>
     </main>

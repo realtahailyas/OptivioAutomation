@@ -88,6 +88,38 @@ export const metadata: Metadata = {
   },
 }
 
+// Android apps published under the Optivio Automation Google Play developer account
+const apps = [
+  {
+    id: 'https://tchess.app/#app',
+    name: 'TChess',
+    url: 'https://tchess.app',
+    play: 'https://play.google.com/store/apps/details?id=app.tchess',
+    category: 'GameApplication',
+  },
+  {
+    id: 'https://optivioautomation.com/#dareclock',
+    name: 'DareClock',
+    url: 'https://play.google.com/store/apps/details?id=com.dareclock',
+    play: 'https://play.google.com/store/apps/details?id=com.dareclock',
+    category: 'LifestyleApplication',
+  },
+  {
+    id: 'https://getcertforge.app/#app',
+    name: 'CertForge',
+    url: 'https://getcertforge.app',
+    play: 'https://play.google.com/store/apps/details?id=com.getcertforge.app',
+    category: 'EducationalApplication',
+  },
+  {
+    id: 'https://optivioautomation.com/#brick-breaker-power-rush',
+    name: 'Brick Breaker: Power Rush',
+    url: 'https://play.google.com/store/apps/details?id=com.brickrush',
+    play: 'https://play.google.com/store/apps/details?id=com.brickrush',
+    category: 'GameApplication',
+  },
+]
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -109,6 +141,7 @@ const jsonLd = {
           'https://www.instagram.com/tahailyasofficial',
           'https://www.linkedin.com/in/tahailyas/',
           'https://www.facebook.com/tahailyas',
+          'https://github.com/realtahailyas',
         ],
         jobTitle: 'Founder & CEO',
         worksFor: [
@@ -126,6 +159,7 @@ const jsonLd = {
         'https://www.instagram.com/optivioautomation',
         'https://www.facebook.com/optivioautomation',
         'https://www.linkedin.com/company/optivoautomation',
+        'https://play.google.com/store/apps/developer?id=Optivio+Automation',
       ],
       description:
         'UK agency providing 24/7 AI receptionists for dental practices and other service businesses.',
@@ -151,6 +185,18 @@ const jsonLd = {
       description: 'AI chatbot tool for businesses.',
       creator: { '@id': 'https://tahailyas.com/#person' },
     },
+    ...apps.map((app) => ({
+      '@type': 'MobileApplication',
+      '@id': app.id,
+      name: app.name,
+      url: app.url,
+      installUrl: app.play,
+      sameAs: [app.play],
+      operatingSystem: 'Android',
+      applicationCategory: app.category,
+      publisher: { '@id': 'https://optivioautomation.com/#organization' },
+      author: { '@id': 'https://tahailyas.com/#person' },
+    })),
     {
       '@type': 'WebSite',
       '@id': 'https://optivioautomation.com/#website',
