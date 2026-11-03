@@ -101,7 +101,7 @@ function BookCard({ book, index }: { book: Book; index: number }) {
             href={book.amazon}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl bg-[#ffc93c] px-4 text-sm font-bold text-[#16213e] shadow-[0_3px_0_#d9a420] active:translate-y-px active:shadow-none"
+            className="inline-flex min-h-[44px] items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-[#ffc93c] px-2 text-[13px] font-bold min-[360px]:px-4 min-[360px]:text-sm text-[#16213e] shadow-[0_3px_0_#d9a420] active:translate-y-px active:shadow-none"
           >
             View on Amazon <ExternalLink className="h-4 w-4" aria-hidden />
           </a>
@@ -109,7 +109,7 @@ function BookCard({ book, index }: { book: Book; index: number }) {
             href={book.sample}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl px-3 text-[13px] font-semibold text-[#16213e] underline decoration-[#e63946] decoration-2 underline-offset-4"
+            className="inline-flex min-h-[44px] items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-1 text-[12px] font-semibold text-[#16213e] underline min-[360px]:px-3 min-[360px]:text-[13px] decoration-[#e63946] decoration-2 underline-offset-4"
           >
             <Download className="h-4 w-4" aria-hidden /> Free printable pages
           </a>
@@ -150,7 +150,7 @@ export default function BooksPage() {
   const kids = books.filter((b) => b.audience === 'kids')
   const seniors = books.filter((b) => b.audience === 'seniors')
   const chip =
-    'inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-4 text-sm font-semibold text-white'
+    'inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-3 text-[13px] font-semibold text-white min-[360px]:px-4 min-[360px]:text-sm'
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#16213e] font-dm text-white">
@@ -166,7 +166,7 @@ export default function BooksPage() {
       </header>
 
       <nav aria-label="Jump to section" className="sticky top-0 z-10 mt-4 bg-[#16213e]/95 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl justify-center gap-2 overflow-x-auto px-4 py-1">
+        <div className="mx-auto flex max-w-6xl justify-center gap-2 overflow-x-auto px-3 py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <a href="#all" className={chip}>All books</a>
           <a href="#kids" className={chip}>For kids</a>
           <a href="#seniors" className={chip}>For seniors</a>
