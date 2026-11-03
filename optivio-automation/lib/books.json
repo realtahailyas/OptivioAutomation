@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "detective-puzzles-kids-vol2",
+    "name": "Detective Puzzle Book for Kids: Volume 2",
+    "title": "Detective Puzzle Book for Kids Ages 8-12",
+    "subtitle": "40 More Mystery Cases to Crack with Logic Grids, Secret Codes and Suspect Line-Ups",
+    "hook": "A goat escapes. A door turns purple. A moon rock vanishes! Can YOU crack the case?",
+    "highlights": [
+      "32 new logic-grid mystery cases in 3 levels",
+      "8 suspect line-ups",
+      "10 secret code labs with new messages",
+      "4 chase mazes for a quick brain break"
+    ],
+    "price": "$10.99",
+    "audience": "kids",
+    "badge": "Ages 8-12",
+    "asin": "B0HP7TTX7W",
+    "amazon": "https://www.amazon.com/dp/B0HP7TTX7W",
+    "sample": "https://drive.google.com/file/d/1CEKmTH13HrG_uW0yQn_AsqnQ3pzan0Z_/view",
+    "cover": "/books/detective-puzzles-kids-vol2.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-10-25"
+  },
+  {
+    "slug": "word-search-women",
+    "name": "Large Print Word Search for Women",
+    "title": "Large Print Word Search for Women",
+    "subtitle": "100 Relaxing Puzzles About Home, Garden, Kitchen, Travel and the Little Joys of Life — With Full Solutions",
+    "hook": "Pour a cup of tea, find a comfy chair and relax!",
+    "highlights": [
+      "100 cozy themes",
+      "A Cozy Thought on every puzzle",
+      "Large print grids with bold letters that are easy on the eyes",
+      "Forward-only words"
+    ],
+    "price": "$12.99",
+    "audience": "seniors",
+    "badge": "Large print",
+    "asin": "B0HP84V1N3",
+    "amazon": "https://www.amazon.com/dp/B0HP84V1N3",
+    "sample": "https://drive.google.com/file/d/1cE60tVEEU1XNiqtjzYTMFTmq07uLCXQ2/view",
+    "cover": "/books/word-search-women.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-10-25"
+  },
+  {
+    "slug": "animal-mazes-kids",
+    "name": "Animal Mazes for Kids",
+    "title": "Animal Mazes for Kids Ages 4-8",
+    "subtitle": "100 Fun Maze Puzzles from Easy to Tricky — Activity Book for Boys and Girls",
+    "hook": "Ready, set, explore!",
+    "highlights": [
+      "100 animal mazes in fun shapes, 25 in every level",
+      "4 levels that grow with your child",
+      "A little story on every page",
+      "Big, bold lines that are perfect for small hands, pencils and crayons"
+    ],
+    "price": "$9.99",
+    "audience": "kids",
+    "badge": "Ages 4-8",
+    "asin": "B0HNHGHFTS",
+    "amazon": "https://www.amazon.com/dp/B0HNHGHFTS",
+    "sample": "https://drive.google.com/file/d/1YEg_W9NO0rr104oflfCJ1u6EVzrEQgLC/view",
+    "cover": "/books/animal-mazes-kids.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-10-18"
+  },
+  {
+    "slug": "nostalgic-word-search-seniors",
+    "name": "Large Print Nostalgic Word Search",
+    "title": "Large Print Nostalgic Word Search for Seniors",
+    "subtitle": "100 Memory Lane Puzzles from the 50s, 60s, 70s and 80s — Easy-to-Read Word Find Book for Adults with Solutions",
+    "hook": "Take a happy trip down Memory Lane!",
+    "highlights": [
+      "100 nostalgic themes",
+      "Large print grids with bold letters that are easy on the eyes",
+      "Forward-only words",
+      "Memory Lane prompts on every page to spark stories and conversation with family"
+    ],
+    "price": "$12.99",
+    "audience": "seniors",
+    "badge": "Large print",
+    "asin": "B0HNHCR7JW",
+    "amazon": "https://www.amazon.com/dp/B0HNHCR7JW",
+    "sample": "https://drive.google.com/file/d/1bW7R2C6bAFvd3ycIx36c-wlws1vIIG7k/view",
+    "cover": "/books/nostalgic-word-search-seniors.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-10-18"
+  },
+  {
+    "slug": "easy-activity-book-seniors",
+    "name": "Easy Activity Book for Seniors",
+    "title": "Easy Activity Book for Seniors",
+    "subtitle": "100 Large Print Puzzles, Games & Coloring Pages for Adults with Dementia, Alzheimer's or Memory Loss",
+    "hook": "Gentle fun, one page at a time.",
+    "highlights": [
+      "Look Closely",
+      "Memory Lane",
+      "Word Fun",
+      "Number Fun"
+    ],
+    "price": "$11.99",
+    "audience": "seniors",
+    "badge": "Large print",
+    "asin": "B0HNDZJB2P",
+    "amazon": "https://www.amazon.com/dp/B0HNDZJB2P",
+    "sample": "https://drive.google.com/file/d/16R9a9djc3NFsbUkyWRJ78ajZXxgC8N07/view",
+    "cover": "/books/easy-activity-book-seniors.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-10-16"
+  },
+  {
+    "slug": "detective-puzzles-kids",
+    "name": "Detective Puzzle Book for Kids",
+    "title": "Detective Puzzle Book for Kids Ages 8-12",
+    "subtitle": "40 Mystery Cases to Crack with Logic Grids, Secret Codes and Suspect Line-Ups",
+    "hook": "Trophies are vanishing. Cupcakes are disappearing. A robot has rolled away! Can YOU crack the case?",
+    "highlights": [
+      "32 logic-grid mystery cases in 3 levels",
+      "8 suspect line-ups",
+      "10 secret code labs",
+      "4 chase mazes for a quick brain break"
+    ],
+    "price": "$10.99",
+    "audience": "kids",
+    "badge": "Ages 8-12",
+    "asin": "B0HN5RVFBF",
+    "amazon": "https://www.amazon.com/dp/B0HN5RVFBF",
+    "sample": "https://drive.google.com/file/d/1H-fOuDM4A6zmpyx5AW9jQrqReZGzAQHm/view",
+    "cover": "/books/detective-puzzles-kids.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-10-15"
+  }
+]
