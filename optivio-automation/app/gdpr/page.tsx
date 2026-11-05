@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'GDPR & Data Processing Agreement | Optivio Automation',
+  title: 'GDPR & Data Processing Agreement',
   description:
     'GDPR compliance and Data Processing Agreement (DPA) for Optivio Automation, the AI receptionist for UK dental practices.',
 }

@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Optivio Automation',
+  title: 'Privacy Policy',
   description:
     'How Optivio Automation collects, uses, and protects personal data for our AI receptionist service for UK dental practices.',
 }

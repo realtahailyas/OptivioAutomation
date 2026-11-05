@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Optivio Automation',
+  title: 'Terms of Service',
   description:
     'Terms of Service for the Optivio Automation AI receptionist service for UK dental practices.',
 }
