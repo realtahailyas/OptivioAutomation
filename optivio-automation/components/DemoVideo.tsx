@@ -14,7 +14,7 @@ export default function DemoVideo() {
               Watch Our AI Answer a Real Call
             </h2>
             <p className="text-[#94A3B8] font-dm text-lg max-w-2xl mx-auto leading-relaxed">
-              Live demo — watch our AI receptionist pick up a call, qualify a lead, and book an
+              Live demo, watch our AI receptionist pick up a call, qualify a lead, and book an
               appointment in real time.
             </p>
           </div>

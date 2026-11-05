@@ -52,7 +52,7 @@ export default function Hero() {
           className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mt-6 font-dm leading-relaxed"
         >
           AI Receptionist that answers every call, books appointments instantly, and handles
-          after-hours emergencies — 24/7. Setup in under 5 days.
+          after-hours emergencies, 24/7. Setup in under 5 days.
         </motion.p>
 
         {/* Value Bullets */}

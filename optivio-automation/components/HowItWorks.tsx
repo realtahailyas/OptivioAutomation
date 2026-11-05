@@ -4,7 +4,7 @@ const steps = [
   {
     number: '01',
     title: 'We Build Your AI Agent',
-    text: 'We train your AI on your business — services, pricing, FAQs, booking rules. Custom-built for your specific needs.',
+    text: 'We train your AI on your business, services, pricing, FAQs, booking rules. Custom-built for your specific needs.',
   },
   {
     number: '02',

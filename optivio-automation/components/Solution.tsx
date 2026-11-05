@@ -15,7 +15,7 @@ const features = [
   {
     Icon: MessageSquare,
     title: 'Handles FAQs',
-    text: 'Pricing, hours, services, location — your AI knows your business and answers accurately every time.',
+    text: 'Pricing, hours, services, location, your AI knows your business and answers accurately every time.',
   },
   {
     Icon: BarChart3,

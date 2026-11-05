@@ -12,7 +12,7 @@ const problems = [
     Icon: Clock,
     stat: '85%',
     title: 'Never Call Back',
-    text: 'of callers who hit voicemail never call back. They ring the next practice on Google instead — and book there.',
+    text: 'of callers who hit voicemail never call back. They ring the next practice on Google instead, and book there.',
   },
   {
     Icon: UserMinus,
@@ -37,7 +37,7 @@ export default function Problem() {
               walking to your competitor.
             </h2>
             <p className="text-[#94A3B8] font-dm text-lg max-w-2xl mx-auto leading-relaxed">
-              Your reception team is brilliant — but they&apos;re stretched. They can&apos;t answer
+              Your reception team is brilliant, but they&apos;re stretched. They can&apos;t answer
               phones while checking patients in, processing payments, and managing the diary. After
               5pm, calls just disappear. We fix that.
             </p>

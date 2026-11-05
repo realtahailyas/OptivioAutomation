@@ -130,7 +130,7 @@ export default function Pricing() {
         <AnimatedSection delay={0.4}>
           <p className="text-[#94A3B8] font-dm text-sm text-center mt-12 max-w-2xl mx-auto leading-relaxed">
             Compare to a UK dental receptionist (£25,000/year + benefits). Our Pro plan replaces
-            60–70% of front-desk phone work — for less than 1/4 the cost.
+            60–70% of front-desk phone work, for less than 1/4 the cost.
           </p>
         </AnimatedSection>
       </div>
