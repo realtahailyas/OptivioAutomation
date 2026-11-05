@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ExternalLink } from 'lucide-react'
 import PageShell, { PageHeader, Section, btnPrimary, btnGhost, card } from '@/components/hub/PageShell'
 import AppIcon from '@/components/hub/AppIcon'
@@ -39,6 +40,8 @@ export default async function AppPage({ params }: Props) {
       '@id': `${SITE_URL}${path}#app`,
       name: app.name,
       description: app.description.join(' '),
+      image: [`${SITE_URL}${app.icon}`, ...app.screenshots.map((s) => `${SITE_URL}${s.src}`)],
+      screenshot: app.screenshots.map((s) => `${SITE_URL}${s.src}`),
       url: `${SITE_URL}${path}`,
       installUrl: app.play,
       sameAs: [app.play, ...(app.site ? [app.site.url] : [])],
@@ -46,7 +49,6 @@ export default async function AppPage({ params }: Props) {
       applicationCategory: app.schemaCategory,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       publisher: { '@id': `${SITE_URL}/#organization` },
-      author: { '@id': 'https://tahailyas.com/#person' },
     },
     breadcrumb([
       { name: 'Home', path: '/' },
@@ -97,7 +99,7 @@ export default async function AppPage({ params }: Props) {
 
           <aside className={`${card} h-fit`}>
             <div className="mb-5">
-              <AppIcon glyph={app.glyph} accent={app.accent} size={64} />
+              <AppIcon src={app.icon} name={app.name} size={80} />
             </div>
             <dl className="space-y-4 text-sm font-dm">
               <div>
@@ -136,6 +138,26 @@ export default async function AppPage({ params }: Props) {
           </aside>
         </div>
       </Section>
+
+      {app.screenshots.length > 0 && (
+        <Section title="Screenshots">
+          <ul className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 -mx-1 px-1 max-w-full">
+            {app.screenshots.map((s, i) => (
+              <li key={s.src} className="snap-start shrink-0 w-[200px] sm:w-[220px]">
+                <Image
+                  src={s.src}
+                  alt={s.alt}
+                  width={600}
+                  height={app.slug === 'tchess' ? 1300 : 1067}
+                  sizes="220px"
+                  loading={i < 2 ? 'eager' : 'lazy'}
+                  className="w-full h-auto rounded-2xl border border-white/10"
+                />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       <Section title="More apps">
         <ul className="flex flex-wrap gap-3">

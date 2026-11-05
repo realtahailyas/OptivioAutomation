@@ -34,20 +34,20 @@ export default function Footer() {
               className="object-contain h-9 w-auto mb-3"
             />
             <p className="text-[#94A3B8] font-dm text-sm max-w-xs text-center sm:text-left">
-              A small software studio: Android apps, AI voice agents, puzzle book publishing and content automation.
+              A software company: Android apps, AI voice agents, puzzle book publishing and content automation.
             </p>
             <div className="flex items-center gap-4 mt-5">
               <a href={LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors">
                 <Github size={20} />
               </a>
-              <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Taha Ilyas on LinkedIn" className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors">
+              <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Optivio Automation on LinkedIn" className="text-[#94A3B8] hover:text-[#00C8FF] transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
           </div>
 
           <div className="flex flex-col items-center sm:items-start">
-            <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">Studio</p>
+            <p className="text-white font-sora font-semibold text-sm uppercase tracking-widest mb-4">Company</p>
             <ul className="flex flex-col items-center sm:items-start gap-3">
               {studio.map((l) => (
                 <li key={l.href}>
@@ -87,11 +87,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-[rgba(0,200,255,0.05)]">
           <p className="text-[#94A3B8] font-dm text-sm text-center sm:text-left">
-            © 2026 Optivio Automation. Founded by{' '}
-            <a href={LINKS.personal} className="text-[#94A3B8] hover:text-white underline underline-offset-2 transition-colors">
-              Taha Ilyas
-            </a>
-            .
+            © 2026 Optivio Automation.
           </p>
           <a href={`mailto:${LINKS.email}`} className="text-[#94A3B8] hover:text-white font-dm text-xs">
             {LINKS.email}

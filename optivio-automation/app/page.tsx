@@ -8,9 +8,9 @@ import { buildMetadata } from '@/lib/seo'
 import { FEATURED_APPS, LINKS, SAME_AS, SITE_URL } from '@/lib/site'
 
 export const metadata = buildMetadata({
-  title: 'Optivio Automation | Software studio: apps, AI voice agents, publishing',
+  title: 'Optivio Automation | Software company: apps, AI voice agents, publishing',
   description:
-    'Optivio Automation is a small software studio run by Taha Ilyas. Android apps on Google Play, AI voice agents, puzzle book publishing and content automation.',
+    'Optivio Automation is a software company building Android apps on Google Play, AI voice agents, puzzle books and content automation.',
   path: '/',
   absoluteTitle: true,
 })
@@ -25,7 +25,7 @@ const jsonLd = {
       url: SITE_URL,
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.png` },
       description:
-        'A small software studio building Android apps, AI voice agents, puzzle books and content automation.',
+        'A software company building Android apps, AI voice agents, puzzle books and content automation.',
       founder: { '@id': 'https://tahailyas.com/#person' },
       contactPoint: {
         '@type': 'ContactPoint',
@@ -91,7 +91,7 @@ const areas = [
 
 const principles = [
   ['Build first', 'We make the thing, put it in front of people, then write about it. Pages here describe what exists.'],
-  ['Small and direct', 'One founder, no layers. You talk to the person who writes the code.'],
+  ['Live products, maintained', 'We ship apps to Google Play and keep them updated, supported and compliant after launch.'],
   ['Open where it helps', 'Tools such as the puzzle book generator and the chess content pipeline are open source on GitHub.'],
 ]
 
@@ -143,7 +143,7 @@ export default function HomePage() {
         <div className="relative max-w-5xl mx-auto">
           <p className="inline-flex items-center gap-2 bg-[#0F1F35] border border-[rgba(0,200,255,0.2)] rounded-full px-4 py-2 mb-8 text-[#94A3B8] text-sm font-dm">
             <span className="w-2 h-2 rounded-full bg-[#00C8FF] animate-pulse" />
-            Software studio
+            Software company
           </p>
           <h1 className="font-sora font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.08] max-w-3xl">
             <span className="bg-gradient-to-b from-white via-white to-[#94A3B8] bg-clip-text text-transparent">
@@ -151,16 +151,16 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="text-slate-300 font-dm text-base md:text-lg leading-relaxed max-w-2xl mt-6">
-            Optivio Automation is a small studio run by Taha Ilyas. We ship Android apps on Google Play,
-            build AI phone agents for service businesses, publish puzzle books and run content
-            pipelines. Everything here is something we built and operate ourselves.
+            Optivio Automation ships Android apps on Google Play, builds AI phone agents for service
+            businesses, publishes puzzle books and runs content pipelines. Everything here is
+            something we built and operate ourselves.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3">
             <Link href="/apps" className={btnPrimary}>
               See our apps <ArrowRight size={18} className="ml-2" />
             </Link>
             <Link href="/about" className={btnGhost}>
-              Meet the founder
+              About the company
             </Link>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function HomePage() {
                   href={`/apps/${app.slug}`}
                   className="flex items-center gap-4 rounded-2xl border border-[rgba(0,200,255,0.12)] bg-[#0F1F35] p-5 transition-colors hover:border-[rgba(0,200,255,0.4)]"
                 >
-                  <AppIcon glyph={app.glyph} accent={app.accent} />
+                  <AppIcon src={app.icon} name={app.name} size={64} />
                   <span className="min-w-0">
                     <span className="block font-sora font-semibold">{app.name}</span>
                     <span className="block text-[#94A3B8] font-dm text-sm">{app.tagline}</span>

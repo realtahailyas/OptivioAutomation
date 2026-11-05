@@ -17,11 +17,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://optivioautomation.com'),
   title: {
-    default: 'Optivio Automation | Software studio: apps, AI voice agents, publishing',
+    default: 'Optivio Automation | Software company: apps, AI voice agents, publishing',
     template: '%s | Optivio Automation',
   },
   description:
-    'Optivio Automation is a small software studio run by Taha Ilyas. Android apps on Google Play, AI voice agents, puzzle book publishing and content automation.',
+    'Optivio Automation is a software company building Android apps on Google Play, AI voice agents, puzzle books and content automation.',
   authors: [{ name: 'Taha Ilyas', url: 'https://tahailyas.com' }],
   creator: 'Optivio Automation',
   publisher: 'Optivio Automation',

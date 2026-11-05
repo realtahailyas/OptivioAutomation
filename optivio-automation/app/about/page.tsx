@@ -6,9 +6,9 @@ import { buildMetadata, breadcrumb } from '@/lib/seo'
 import { LINKS, SITE_URL } from '@/lib/site'
 
 export const metadata = buildMetadata({
-  title: 'About Taha Ilyas and Optivio Automation',
+  title: 'About Optivio Automation',
   description:
-    'Optivio Automation is a small software studio founded by Taha Ilyas, a developer based in Pakistan who builds Android apps, AI voice agents and automation pipelines.',
+    'Optivio Automation is a software company building Android apps on Google Play, AI voice agents, puzzle books and content automation pipelines.',
   path: '/about',
 })
 
@@ -21,15 +21,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     url: `${SITE_URL}/about`,
-    mainEntity: {
-      '@type': 'Person',
-      '@id': 'https://tahailyas.com/#person',
-      name: 'Taha Ilyas',
-      url: LINKS.personal,
-      jobTitle: 'Founder',
-      worksFor: { '@id': `${SITE_URL}/#organization` },
-      sameAs: [LINKS.github, LINKS.linkedin],
-    },
+    mainEntity: { '@id': `${SITE_URL}/#organization` },
   },
 ]
 
@@ -46,24 +38,27 @@ export default function AboutPage() {
       <JsonLd data={jsonLd} />
       <PageHeader
         eyebrow="About"
-        title="Optivio Automation is one developer and a lot of automation"
-        lead="The studio is run by Taha Ilyas. He writes the code, ships the apps and keeps the pipelines running."
+        title="A software company that ships and runs its own products"
+        lead="Optivio Automation builds Android apps, AI voice agents, puzzle books and automation pipelines, and keeps them running after launch."
         crumbs={[{ name: 'Home', href: '/' }, { name: 'About' }]}
       />
-      <Section title="Founder">
+      <Section title="What we do">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-slate-300 font-dm leading-relaxed">
             <p>
-              Taha Ilyas is an indie mobile developer based in Pakistan. He builds Android apps with React
-              Native and Kotlin, writes automation in Python and TypeScript, and publishes everything under
-              the Optivio Automation name.
+              We work in four areas: <Link href="/apps" className="text-[#00C8FF] underline underline-offset-2">apps on Google Play</Link>,{' '}
+              <Link href="/ai-voice-agent" className="text-[#00C8FF] underline underline-offset-2">an AI voice agent</Link> for service businesses,{' '}
+              <Link href="/publishing" className="text-[#00C8FF] underline underline-offset-2">puzzle book publishing</Link> and{' '}
+              <Link href="/automation" className="text-[#00C8FF] underline underline-offset-2">content automation</Link>.
             </p>
             <p>
-              The work spans four areas: <Link href="/apps" className="text-[#00C8FF] underline underline-offset-2">apps on Google Play</Link>,{' '}
-              <Link href="/ai-voice-agent" className="text-[#00C8FF] underline underline-offset-2">an AI voice agent</Link>,{' '}
-              <Link href="/publishing" className="text-[#00C8FF] underline underline-offset-2">puzzle book publishing</Link> and{' '}
-              <Link href="/automation" className="text-[#00C8FF] underline underline-offset-2">content automation</Link>. For his
-              personal portfolio and writing, see{' '}
+              Our apps are built with React Native, Kotlin and Unity. Our automation is written in Python and
+              TypeScript. We publish under the Optivio Automation name, maintain what we release, and open
+              source tools where it helps others.
+            </p>
+            <p>
+              The company was founded by Taha Ilyas, based in Pakistan. His personal portfolio and writing
+              live at{' '}
               <a href={LINKS.personal} className="text-[#00C8FF] underline underline-offset-2">tahailyas.com</a>.
             </p>
           </div>
@@ -92,7 +87,7 @@ export default function AboutPage() {
           for voice agent enquiries, automation work or press.
         </p>
         <Link href="/" className={btnGhost}>
-          Back to the studio
+          Back to home
         </Link>
       </Section>
     </PageShell>
