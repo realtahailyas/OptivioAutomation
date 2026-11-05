@@ -1,5 +1,51 @@
 [
   {
+    "slug": "would-you-rather-kids",
+    "name": "Would You Rather Book for Kids",
+    "title": "Would You Rather Book for Kids",
+    "subtitle": "432 Silly, Funny and Tricky Questions for Ages 6-12 — A Family Game Book for Car Rides, Sleepovers and Game Night",
+    "hook": "Would you rather have a pet dinosaur the size of a cat, or a pet cat the size of a dinosaur?",
+    "highlights": [
+      "432 original questions in 12 fun chapters",
+      "Easy game rules for 2 or more players, with points for guessing and for the best reason, plus a tie-breaker round",
+      "Tick boxes and \"Why?\" lines on every question, so kids can play alone too",
+      "4 score sheets, \"Make Your Own\" question pages and a Would You Rather Champion certificate"
+    ],
+    "price": "$9.99",
+    "audience": "kids",
+    "badge": "Ages 6-12",
+    "asin": "B0HQHYNC3Q",
+    "amazon": "https://www.amazon.com/dp/B0HQHYNC3Q",
+    "sample": "https://drive.google.com/file/d/1SqSoYI5anEdDRj0-e1rJBYMf34Nqb9r2/view",
+    "cover": "/books/would-you-rather-kids.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-11-05"
+  },
+  {
+    "slug": "jumbo-word-search-seniors",
+    "name": "Extra Large Print Easy Word Search",
+    "title": "Extra Large Print Easy Word Search for Seniors",
+    "subtitle": "100 Jumbo Puzzles with Big Letters, Short Familiar Words and Full Solutions",
+    "hook": "Big letters. Short words. Happy, relaxing puzzles!",
+    "highlights": [
+      "100 friendly themes",
+      "Extra large letters (about 35 pt) in small 11 x 11 grids",
+      "Only 10 short words per puzzle, all easy, everyday words",
+      "Forward-only words"
+    ],
+    "price": "$12.99",
+    "audience": "seniors",
+    "badge": "Extra large print",
+    "asin": "B0HQFZ1W8J",
+    "amazon": "https://www.amazon.com/dp/B0HQFZ1W8J",
+    "sample": "https://drive.google.com/file/d/1TfmR1NSsbA2TYx4PvJyDyV72MAohP-P2/view",
+    "cover": "/books/jumbo-word-search-seniors.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-11-05"
+  },
+  {
     "slug": "detective-puzzles-kids-vol2",
     "name": "Detective Puzzle Book for Kids: Volume 2",
     "title": "Detective Puzzle Book for Kids Ages 8-12",
