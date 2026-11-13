@@ -1,5 +1,51 @@
 [
   {
+    "slug": "easy-crossword-seniors",
+    "name": "Easy Large Print Crossword Puzzles for Seniors",
+    "title": "Easy Large Print Crossword Puzzles for Seniors",
+    "subtitle": "80 Relaxing Crosswords for Adults with Big Squares, Easy Everyday Clues and Full Solutions",
+    "hook": "Pour a cup of tea, pick up a pencil and enjoy a good crossword.",
+    "highlights": [
+      "80 easy crossword puzzles using common words about home, garden, food, nature, travel and daily life",
+      "Big 11 x 11 grids printed across a full page, with large clue numbers",
+      "Large print clues on the facing page, so you never have to squint or flip back and forth",
+      "The letter count after every clue, a gentle helping hand"
+    ],
+    "price": "$12.99",
+    "audience": "seniors",
+    "badge": "Large print",
+    "asin": "B0HRL4L996",
+    "amazon": "https://www.amazon.com/dp/B0HRL4L996",
+    "sample": "https://drive.google.com/file/d/11rSg_Zk7j-gHKje18SJC9vU2_vOzegTs/view",
+    "cover": "/books/easy-crossword-seniors.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-11-14"
+  },
+  {
+    "slug": "mazes-kids-6-8",
+    "name": "Mazes for Kids Ages 6-8",
+    "title": "Mazes for Kids Ages 6-8",
+    "subtitle": "100 Amazing Adventure Mazes Through Space, the Ocean, Dino Valley, the Jungle and the City — Activity Book for Boys and Girls",
+    "hook": "Are you ready for an adventure?",
+    "highlights": [
+      "100 adventure mazes in fun shapes, every one original",
+      "5 adventure worlds",
+      "4 levels that grow with your child",
+      "A mini story on every page"
+    ],
+    "price": "$9.99",
+    "audience": "kids",
+    "badge": "Ages 6-8",
+    "asin": "B0HRF7RSN7",
+    "amazon": "https://www.amazon.com/dp/B0HRF7RSN7",
+    "sample": "https://drive.google.com/file/d/1yOqy9rhoXGpMcOHfWx6WBqbHhSHF10oc/view",
+    "cover": "/books/mazes-kids-6-8.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-11-13"
+  },
+  {
     "slug": "would-you-rather-kids",
     "name": "Would You Rather Book for Kids",
     "title": "Would You Rather Book for Kids",
