@@ -1,5 +1,51 @@
 [
   {
+    "slug": "puzzle-book-kids-8-12",
+    "name": "Puzzle Book for Kids 8-12",
+    "title": "Puzzle Book for Kids Ages 8-12",
+    "subtitle": "120 Brain Games, Logic Puzzles, Mazes, Secret Codes, Word Searches and Sudoku to Train Your Brain",
+    "hook": "Welcome to the Brain Gym! Can YOU become a Brain Champion?",
+    "highlights": [
+      "10 kinds of puzzles",
+      "4 levels",
+      "Secret code labs with real codes",
+      "Every puzzle checked by computer to have one correct answer"
+    ],
+    "price": "$9.99",
+    "audience": "kids",
+    "badge": "Ages 8-12",
+    "asin": "B0HRVNYGBL",
+    "amazon": "https://www.amazon.com/dp/B0HRVNYGBL",
+    "sample": "https://drive.google.com/file/d/14SfQfRz4PWlmOXYFNIpQk3ZMBEzZd5kx/view",
+    "cover": "/books/puzzle-book-kids-8-12.webp",
+    "coverWidth": 600,
+    "coverHeight": 776,
+    "live": "2026-11-23"
+  },
+  {
+    "slug": "animal-word-search-adults",
+    "name": "Large Print Animal Word Search for Adults",
+    "title": "Large Print Animal Word Search for Adults",
+    "subtitle": "100 Puzzles About Wild Animals, Pets, Birds & Sea Life — With Fun Facts and Full Solutions",
+    "hook": "A wild, wonderful puzzle adventure!",
+    "highlights": [
+      "100 animal themes",
+      "A \"Did You Know?\" fact on every puzzle",
+      "Large print grids with bold letters that are easy on the eyes",
+      "Forward-only words"
+    ],
+    "price": "$12.99",
+    "audience": "seniors",
+    "badge": "Large print",
+    "asin": "B0HS4G9CCF",
+    "amazon": "https://www.amazon.com/dp/B0HS4G9CCF",
+    "sample": "https://drive.google.com/file/d/1huuAgrQ0ZB_69HWeZm7Qe6LGfKfZ7Vse/view",
+    "cover": "/books/animal-word-search-adults.webp",
+    "coverWidth": 600,
+    "coverHeight": 777,
+    "live": "2026-11-23"
+  },
+  {
     "slug": "easy-crossword-seniors",
     "name": "Easy Large Print Crossword Puzzles for Seniors",
     "title": "Easy Large Print Crossword Puzzles for Seniors",
